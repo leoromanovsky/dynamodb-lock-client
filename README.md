@@ -1,5 +1,7 @@
 [![CircleCI](https://circleci.com/gh/leoromanovsky/dynamodb-lock-client.svg?style=svg)](https://circleci.com/gh/leoromanovsky/dynamodb-lock-client)
 
+[![Coverage Status](https://coveralls.io/repos/github/leoromanovsky/dynamodb-lock-client/badge.svg)](https://coveralls.io/github/leoromanovsky/dynamodb-lock-client)
+
 # DynamoDB Lock Client for Go
 
 The dymanoDB Lock Client for Go is a general purpose distributed locking library

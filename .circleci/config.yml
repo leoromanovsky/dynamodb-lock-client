@@ -12,7 +12,18 @@ jobs:
     steps:
       - checkout
       - run: mkdir -p $TEST_RESULTS
+
+      - restore_cache:
+          keys:
+            - v1-pkg-cache
+
       - run: go get github.com/mattn/goveralls
       - run: go get -v -t -d ./...
+
+      - save_cache:
+          key: v1-pkg-cache
+          paths:
+            - "/go/pkg"
+
       - run: go test -v -cover -coverprofile=${TEST_RESULTS}/coverage.out ./...
       - run: goveralls -coverprofile=${TEST_RESULTS}/coverage.out -service=circle-ci -repotoken=$COVERALLS_TOKEN
