@@ -2,7 +2,7 @@
 
 
 [[projects]]
-  digest = "1:73e36a3a8b3874745bc8d2802adda658c0f88427d52ef5cffb6d60bd87c43140"
+  digest = "1:67a171991e711b308da56539c864ef5ba149f9ece591475da2be214bee9d4287"
   name = "github.com/aws/aws-sdk-go"
   packages = [
     "aws",
@@ -22,6 +22,7 @@
     "private/protocol/jsonrpc",
     "private/protocol/rest",
     "service/dynamodb",
+    "service/dynamodb/dynamodbiface",
   ]
   pruneopts = "UT"
   revision = "71a2a92b0063297b055b6f5a014d441c142da2ce"
@@ -49,6 +50,7 @@
     "github.com/aws/aws-sdk-go/aws",
     "github.com/aws/aws-sdk-go/aws/awserr",
     "github.com/aws/aws-sdk-go/service/dynamodb",
+    "github.com/aws/aws-sdk-go/service/dynamodb/dynamodbiface",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
