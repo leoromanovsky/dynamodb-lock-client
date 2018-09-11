@@ -8,7 +8,7 @@ jobs:
       - image: circleci/golang:1.11
     working_directory: /go/src/github.com/leoromanovsky/dynamodb-lock-client
     environment:
-        COVERAGE_RESULTS: /tmp/test-results
+        TEST_RESULTS: /tmp/test-results
     steps:
       - checkout
       - run: mkdir -p $TEST_RESULTS
